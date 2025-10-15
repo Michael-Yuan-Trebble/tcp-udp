@@ -2,17 +2,18 @@
 #include "./servers/tcpServer.h"
 #include "./clients/tcpClient.h"
 
-void runServer() {
+void runServer() 
+{
 	tcpServer();
 }
 
-void runClient() {
+void runClient() 
+{
 	tcpClient();
 }
 
 int main()
 {
-
 	std::thread serverThread(runServer);
 
 	std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -23,5 +24,4 @@ int main()
 	clientThread.join();
 
 	return 0;
-
 }

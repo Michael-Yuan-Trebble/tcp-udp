@@ -8,7 +8,7 @@ endif()
 
 project ("Connect")
 
-add_executable (Connect "Connect.cpp" "Connect.h" "servers/tcpServer.h" "servers/tcpServer.cpp" "clients/tcpClient.h" "clients/tcpClient.cpp")
+add_executable (Connect "Connect.cpp" "Connect.h" "servers/tcpServer.h" "servers/tcpServer.cpp" "clients/tcpClient.h" "clients/tcpClient.cpp" "clients/tcpClientFunctions.h" "clients/tcpClientFunctions.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Connect PROPERTY CXX_STANDARD 20)
